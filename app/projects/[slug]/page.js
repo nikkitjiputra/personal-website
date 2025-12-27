@@ -1,13 +1,32 @@
+
 import React from 'react'
 import NavBar from '@/app/components/NavBar';
+import clientPromise from '@/lib/mongodb';
 
-const getProject = async (slug) => {
-    const res = await fetch(`http://localhost:3000/api/projects/${slug}`);
-    return res.json();
-}
+
+// const getProject = async (slug) => {
+//     const res = await fetch(`http://localhost:3000/api/projects/${slug}`);
+//     return res.json();
+// }
+
 const ProjectPage = async ({params}) => {
-    const { slug } = await params;
-    const { project } = await getProject(slug);
+    const { slug } =  await params;
+    //const { project } = await getProject(slug);
+
+    // useEffect(() => {
+    //     console.log("here");
+    //     fetch(`/api/projects/${slug}`)
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log("data", data);
+    //             setProject(data.collections);})
+    //     }, []);
+
+    const client = await clientPromise;
+    const db = client.db("personalSiteDB");
+    console.log(slug);
+    const project = await db.collection("projects").findOne({ slug: slug });
+
     console.log(project, "a collection");
   return (
     <div>
