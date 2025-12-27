@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(98% 0.016 73.684);
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground: #0a0a0a;
+    --background: oklch(98% 0.016 73.684);
+  }
+}
+
+body {
+  background: oklch(98% 0.016 73.684);
+  color: var(--foreground);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
