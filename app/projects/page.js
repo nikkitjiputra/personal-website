@@ -19,7 +19,7 @@ const Projects = () => {
             .then(res => res.json())
             .then(data => setProjects(data.collections));
         }, []);
-    console.log(projects, "a collection");
+    //console.log(projects, "a collection");
   return (
     
     <div>

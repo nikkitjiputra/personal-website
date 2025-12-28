@@ -8,7 +8,7 @@ export async function GET(req, { params }) {
     const db = client.db("personalSiteDB");
 
     const project = await db.collection("projects").findOne({slug: slug});
-    console.log(project);
+    //console.log(project);
 
     return NextResponse.json({
       success: true,

@@ -12,9 +12,10 @@ const Contact = () => {
             <h1 className="text-2xl md:text-3xl text-amber-900 mb-10">You can reach me by email or LinkedIn!</h1>
             <div className="flex flex-wrap w-full md:w-100 items-center">
                 <Image className="mr-1 mb-5 md:m-5" src="/email.png" width={50} height={50} alt="Email Symbol"></Image>
-                <h1 className="ml-1 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5@gmail.com</h1>
+                
+                <a href="mailto:nikkitjiputra5@gmail.com" className="underline hover:text-amber-900 ml-1 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5@gmail.com</a>
                 <Image className="mr-1 md:m-5" src="/linkedin.png" width={50} height={50} alt="Email Symbol"></Image>
-                <Link className="ml-1 md:m-5 text-lg md:text-xl" href="https://www.linkedin.com/in/lauren-tjiputra/">lauren-tjiputra</Link>
+                <Link className="underline hover:text-amber-900 ml-1 md:m-5 text-lg md:text-xl" href="https://www.linkedin.com/in/lauren-tjiputra/">lauren-tjiputra</Link>
             </div>
             
 

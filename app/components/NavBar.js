@@ -10,7 +10,7 @@ const NavBar = () => {
     <div>
       <nav className="md:hidden bg-orange-100 p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className=" self-start">Nikki Tjiputra</div>
+          <Link href="/" className=" self-start">Nikki Tjiputra</Link>
           <div className="flex flex-col">
             <button id="menu-button" onClick={() => setIsOpen(!isOpen)} className="md:hidden self-end text-black">
               <Image src="/hamburger.png" width="15" height="15" alt="Menu" />

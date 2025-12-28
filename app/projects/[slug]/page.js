@@ -24,17 +24,17 @@ const ProjectPage = async ({params}) => {
 
     const client = await clientPromise;
     const db = client.db("personalSiteDB");
-    console.log(slug);
+    //console.log(slug);
     const project = await db.collection("projects").findOne({ slug: slug });
 
-    console.log(project, "a collection");
+    //console.log(project, "a collection");
   return (
     <div>
         <NavBar />
-        <div className="mt-10 mx-20">
+        <div className="mx-5 mt-5 p-5 md:mt-10 md:mx-20">
             <h1 className="mb-10 text-5xl">Projects</h1>
-            <h1 className="mb-10 text-3xl">{project.name}</h1>
-            <div className="mx-10">
+            <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>
+            <div className="mx-5 md:mx-10">
                 
                 <h1 className="mb-10 text-lg">{project.summary}</h1>
                 <h1 className="mb-5 text-2xl">Tech Stack:</h1>
