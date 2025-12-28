@@ -60,7 +60,7 @@ const Experience = () => {
             </div>
 
             <h1 className="text-3xl mt-10">Skills</h1>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 items-end text-center mx-40 text-xl mb-20">
+            <div className="grid grid-cols-2 mt-5 md:grid-cols-4 gap-10 md:mt-5 items-end text-center md:mx-40 text-xl mb-20">
                 <div className="flex flex-col items-center">
                     <Image className="" src="/java.svg" alt="Java Logo" width={50} height={50}></Image>
                     <h1 className="mt-5">Java</h1>
