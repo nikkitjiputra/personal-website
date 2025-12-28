@@ -9,12 +9,12 @@ const Contact = () => {
         <NavBar />
         <div className="mt-5 p-5 mx-5 md:mt-10 md:mx-20">
             <h1 className="text-5xl mb-10">Contact</h1>
-            <h1 className="text-2xl mb-10">You can reach me by email or LinkedIn!</h1>
-            <div className="flex flex-wrap w-100 items-center">
-                <Image className="m-5" src="/email.png" width={50} height={50} alt="Email Symbol"></Image>
-                <h1 className="m-5 text-xl">nikkitjiputra5@gmail.com</h1>
-                <Image className="m-5" src="/linkedin.png" width={50} height={50} alt="Email Symbol"></Image>
-                <Link className="m-5 text-xl" href="https://www.linkedin.com/in/lauren-tjiputra/">lauren-tjiputra</Link>
+            <h1 className="text-2xl md:text-3xl text-amber-900 mb-10">You can reach me by email or LinkedIn!</h1>
+            <div className="flex flex-wrap w-full md:w-100 items-center">
+                <Image className="mr-1 mb-5 md:m-5" src="/email.png" width={50} height={50} alt="Email Symbol"></Image>
+                <h1 className="ml-1 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5@gmail.com</h1>
+                <Image className="mr-1 md:m-5" src="/linkedin.png" width={50} height={50} alt="Email Symbol"></Image>
+                <Link className="ml-1 md:m-5 text-lg md:text-xl" href="https://www.linkedin.com/in/lauren-tjiputra/">lauren-tjiputra</Link>
             </div>
             
 
