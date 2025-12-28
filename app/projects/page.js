@@ -24,9 +24,9 @@ const Projects = () => {
     
     <div>
         <NavBar />
-        <div className="mt-10 mx-20">
+        <div className="mt-5 p-5 mx-5 md:mt-10 md:mx-20">
             <h1 className="text-5xl mb-10">Projects</h1>
-            <div className="flex justify-start">
+            <div className="flex flex-col md:flex-row justify-start">
                 {projects.map(project => (
                     <ProjectCard description={project.description} key={project._id} name={project.name} slug={project.slug} />
                 ))}

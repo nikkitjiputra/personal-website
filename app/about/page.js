@@ -7,10 +7,10 @@ const About = () => {
     <div className="flex flex-col h-screen">
         <NavBar />
         <div className="flex grow">
-            <div className="flex flex-col mt-10 mx-20">
-                <h1 className="text-5xl mb-10">About</h1>
-                <h1 className="text-3xl text-amber-900 mb-5">Hello, and thank you for visiting my page!</h1>
-                <p className="text-xl w-200 mb-5">
+            <div className="flex flex-col mt-5 mx-5 p-5 md:mt-10 md:mx-20">
+                <h1 className="text-5xl mb-10 md:text-5xl md:mb-10">About</h1>
+                <h1 className="text-2xl md:text-3xl text-amber-900 mb-5">Hello, and thank you for visiting my page!</h1>
+                <p className="text-lg md:text-xl md:w-200 mb-5">
                     I'm currently a computer science student at the University of Maryland and aspiring software engineer with
                     an interest in cybersecurity and data science. Throughout my time at UMD in the computer science program as 
                     well as in College Park Scholars: Environment, Technology, and Economy, I have truly learned how much 
@@ -18,7 +18,7 @@ const About = () => {
                     my journey through the tech world, I hope to use my privilege and role as an engineer and developer to create 
                     meaningful software that impacts real people. 
                 </p>
-                <p className="text-xl w-2/3">Outside of tech, some of my hobbies include all sports, hiking, and trying new restaurants.</p>
+                <p className="text-lg md:text-xl md:w-2/3">Outside of tech, some of my hobbies include all sports, hiking, and trying new restaurants.</p>
             </div>
         </div>
         

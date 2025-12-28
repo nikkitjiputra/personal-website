@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
         <NavBar />
-        <div className="mt-10 mx-20">
+        <div className="mt-5 p-5 mx-5 md:mt-10 md:mx-20">
             <h1 className="text-5xl mb-10">Contact</h1>
             <h1 className="text-2xl mb-10">You can reach me by email or LinkedIn!</h1>
             <div className="flex flex-wrap w-100 items-center">
