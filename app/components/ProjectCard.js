@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
             <h1 className="text-md font-serif mb-10">{props.description}</h1>
         </div>
         
-        <Link className="self-end font-serif z-10" href={`/projects/${props.slug}`}>Read Me</Link>
+        <Link className="self-end font-serif z-20" href={`/projects/${props.slug}`}>Read Me</Link>
     </div>
   )
 }

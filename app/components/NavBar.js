@@ -23,7 +23,7 @@ const NavBar = () => {
   //console.log(isOpen);
   return (
     <div className="">
-      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-20" : "z-0"}`}>
+      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-30" : "z-10"}`}>
         <div className={`flex flex-col h-screen`}>
           <div className="mx-auto w-full flex justify-between items-center p-5 bg-orange-100">
             <Link href="/" className="text-amber-900 font-serif self-start">
