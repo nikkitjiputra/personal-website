@@ -11,8 +11,10 @@ const NavBar = () => {
     useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden"; 
     } else {
       document.body.style.overflow = "";
+      document.documentElement.style.overflow = ""; 
     }
 
     // cleanup in case component unmounts
@@ -35,7 +37,7 @@ const NavBar = () => {
           </div>
           {isOpen &&
           
-          <div id="menu" className="fixed inset-0 mt-20 bg-orange-100 text-amber-900 flex font-sans flex-col h-screen pl-10 text-xl space-x-4">
+          <div id="menu" className="fixed top-0 left-0 right-0 mt-20 bg-orange-100 text-amber-900 flex font-sans flex-col min-h-screen pl-10 text-xl space-x-4">
             <Link href="/" className="m-3 pt-5">HOME</Link>
             <Link href="/about" className="m-3">ABOUT</Link>
             <Link href="/experience" className="m-3 ">EXPERIENCE</Link>
