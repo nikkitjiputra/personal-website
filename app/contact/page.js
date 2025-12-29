@@ -13,9 +13,9 @@ const Contact = () => {
             <div className="flex flex-wrap w-full md:w-100 items-center">
                 <Image className="mx-1 mb-5 md:m-5" src="/email.png" width={50} height={50} alt="Email Symbol"></Image>
                 
-                <a href="mailto:nikkitjiputra5@gmail.com" className="underline hover:text-amber-900 mx-1 mr-5 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5@gmail.com</a>
+                <a href="mailto:nikkitjiputra5@gmail.com" className="underline z-20 hover:text-amber-900 mx-1 mr-5 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5@gmail.com</a>
                 <Image className="mx-1 md:m-5" src="/linkedin.png" width={50} height={50} alt="Email Symbol"></Image>
-                <Link className="underline hover:text-amber-900 mx-1 md:m-5 text-lg md:text-xl" href="https://www.linkedin.com/in/lauren-tjiputra/">lauren-tjiputra</Link>
+                <Link className="underline z-20 hover:text-amber-900 mx-1 md:m-5 text-lg md:text-xl" href="https://www.linkedin.com/in/lauren-tjiputra/">lauren-tjiputra</Link>
             </div>
             
 
