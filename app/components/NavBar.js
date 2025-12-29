@@ -23,7 +23,7 @@ const NavBar = () => {
   //console.log(isOpen);
   return (
     <div className="">
-      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-50" : "z-0"}`}>
+      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-20" : "z-0"}`}>
         <div className={`flex flex-col h-screen`}>
           <div className="mx-auto w-full flex justify-between items-center p-5 bg-orange-100">
             <Link href="/" className="text-amber-900 font-serif self-start">
@@ -35,12 +35,12 @@ const NavBar = () => {
           </div>
           {isOpen &&
           
-          <div id="menu" className="fixed inset-0 bg-orange-100 mt-20 text-amber-900 flex font-sans flex-col h-screen pl-10 text-xl space-x-4">
+          <div id="menu" className="fixed inset-0 mt-20 bg-orange-100 text-amber-900 flex font-sans flex-col h-screen pl-10 text-xl space-x-4">
             <Link href="/" className="m-3 pt-5">HOME</Link>
-            <Link href="/about" className="m-3 bg-orange-100">ABOUT</Link>
-            <Link href="/experience" className="m-3 bg-orange-100">EXPERIENCE</Link>
-            <Link href="/projects" className="m-3 bg-orange-100">PROJECTS</Link>
-            <Link href="/contact" className="m-3 bg-orange-100">CONTACT</Link>
+            <Link href="/about" className="m-3">ABOUT</Link>
+            <Link href="/experience" className="m-3 ">EXPERIENCE</Link>
+            <Link href="/projects" className="m-3 ">PROJECTS</Link>
+            <Link href="/contact" className="m-3 ">CONTACT</Link>
           </div>}
           
         </div>
