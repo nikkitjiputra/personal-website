@@ -12,7 +12,7 @@ import clientPromise from '@/lib/mongodb';
 const ProjectPage = async ({params}) => {
     const { slug } =  await params;
     //const { project } = await getProject(slug);
-
+    console.log("here");
     // useEffect(() => {
     //     console.log("here");
     //     fetch(`/api/projects/${slug}`)
@@ -31,8 +31,8 @@ const ProjectPage = async ({params}) => {
   return (
     <div>
         <NavBar />
-        <div className="mx-5 mt-5 p-5 md:mt-10 md:mx-20">
-            <h1 className="mb-10 text-5xl">Projects</h1>
+        <div className="mx-5 mt-30 font-serif p-5 md:mt-10 md:mx-20">
+            <h1 className="mb-10 text-amber-900 text-5xl">Projects</h1>
             <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>
             <div className="mx-5 md:mx-10">
                 

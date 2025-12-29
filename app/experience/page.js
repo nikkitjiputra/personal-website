@@ -5,9 +5,9 @@ import Image from 'next/image';
 const Experience = () => {
   return (
     <div>
-        <NavBar />
-        <div className="mt-10 mx-10">
-            <h1 className="text-5xl mb-10">Experience</h1>
+        <NavBar className="self-start" />
+        <div className="mt-30 p-5 mx-5 font-serif  md:mt-10 md:mx-20">
+            <h1 className="text-5xl text-amber-900 mb-10">Experience</h1>
 
             <h1 className="text-3xl">Internship Experience</h1>
             <div className="ml-5 md:ml-10">
@@ -49,14 +49,14 @@ const Experience = () => {
             <h1 className="text-3xl mt-10">Relevant Coursework</h1>
 
             <div className="flex flex-wrap ml-5 md:ml-10 text-lg md:text-xl">
-                <h1 className="mt-2 md:mt-5 grow-1">Object Oriented Programming I and II</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Introduction to Computer Systems</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Discrete Structures</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Organization of Programming Languages</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Algorithms</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Web Application Development with JavaScript</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Introduction to Go</h1>
-                <h1 className="mt-2 md:mt-5 grow-1">Object Oriented Programming I and II</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Object Oriented Programming I and II</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Introduction to Computer Systems</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Discrete Structures</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Organization of Programming Languages</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Algorithms</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Web Application Development with JavaScript</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Introduction to Go</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Object Oriented Programming I and II</h1>
             </div>
 
             <h1 className="text-3xl mt-10">Skills</h1>

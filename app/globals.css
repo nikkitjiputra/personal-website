@@ -22,5 +22,9 @@
 body {
   background: oklch(98% 0.016 73.684);
   color: var(--foreground);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+}
+
+#menu {
+  background: oklch(98% 0.016 73.684);
 }
