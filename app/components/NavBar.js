@@ -23,9 +23,9 @@ const NavBar = () => {
   //console.log(isOpen);
   return (
     <div className="">
-      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-15" : "z-5"}`}>
-        <div className="flex flex-col h-screen">
-          <div className="mx-auto w-full flex justify-between items-center p-5 bg-[oklch(98%_0.016_73.684)] bg-orange-100">
+      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-50" : "z-0"}`}>
+        <div className={`flex flex-col h-screen`}>
+          <div className="mx-auto w-full flex justify-between items-center p-5 bg-orange-100">
             <Link href="/" className="text-amber-900 font-serif self-start">
               <Image src="/flowericon.png" width="50" height="50" alt="Home"></Image>
             </Link>
@@ -35,12 +35,12 @@ const NavBar = () => {
           </div>
           {isOpen &&
           
-          <div id="menu" className="fixed inset-0 bg-[oklch(98%_0.016_73.684)] text-amber-900 flex font-sans flex-col bg-orange-100 h-screen mt-20 pl-10 text-lg space-x-4">
-            <Link href="/" className="m-2">HOME</Link>
-            <Link href="/about" className="m-2">ABOUT</Link>
-            <Link href="/experience" className="m-2">EXPERIENCE</Link>
-            <Link href="/projects" className="m-2">PROJECTS</Link>
-            <Link href="/contact" className="m-2">CONTACT</Link>
+          <div id="menu" className="fixed inset-0 bg-orange-100 mt-20 text-amber-900 flex font-sans flex-col h-screen pl-10 text-xl space-x-4">
+            <Link href="/" className="m-3 pt-5">HOME</Link>
+            <Link href="/about" className="m-3 bg-orange-100">ABOUT</Link>
+            <Link href="/experience" className="m-3 bg-orange-100">EXPERIENCE</Link>
+            <Link href="/projects" className="m-3 bg-orange-100">PROJECTS</Link>
+            <Link href="/contact" className="m-3 bg-orange-100">CONTACT</Link>
           </div>}
           
         </div>

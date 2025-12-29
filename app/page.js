@@ -18,7 +18,7 @@ export default function Home() {
             building impactful software that balances innovation with reliability and 
             sustainability.</h1>
         </div>
-        <div className="flex justify-end items-end h-full">
+        <div className="flex justify-end grow items-end h-full">
           
           <Image loading="eager" className="hidden md:block w-full h-auto md:w-full md:h-auto" src="/flowers.png" width="500" height="500" alt="Flowers"></Image>
           
