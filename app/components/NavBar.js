@@ -25,7 +25,7 @@ const NavBar = () => {
   //console.log(isOpen);
   return (
     <div className="">
-      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-30" : "z-10"}`}>
+      <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-50" : "z-30"}`}>
         <div className={`flex flex-col h-screen`}>
           <div className="mx-auto w-full flex justify-between items-center p-5 bg-orange-100">
             <Link href="/" className="text-amber-900 font-serif self-start">
@@ -48,7 +48,7 @@ const NavBar = () => {
         </div>
       </nav>
 
-      <div className="hidden md:block md:flex md:flex-row md:justify-end font-sans text-xl py-5 pr-5">
+      <div className="hidden md:block md:z-20 relative md:flex md:flex-row md:justify-end font-sans text-xl py-5 pr-5">
         <Link className="mx-10 text-amber-900 hover:text-shadow-lg" href="/">HOME</Link>
         <Link className="mx-10 text-amber-900 hover:text-shadow-lg" href="/about">ABOUT</Link>
         <Link className="mx-10 text-amber-900 hover:text-shadow-lg" href="/experience">EXPERIENCE</Link>

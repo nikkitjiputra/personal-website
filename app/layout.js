@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
+import FallingLeaves from "./components/FallingLeaves";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`font-sans antialiased`}
       >
-        
+        <FallingLeaves count={35} />
         {children}
       </body>
     </html>

@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const Experience = () => {
   return (
-    <div>
+    <div className="">
         <NavBar className="self-start" />
-        <div className="mt-30 p-5 mx-5 font-serif  md:mt-10 md:mx-20">
+        <div className="relative z-20 mt-30 p-5 mx-5 font-serif  md:mt-10 md:mx-20">
             <h1 className="text-5xl text-amber-900 mb-10">Experience</h1>
 
             <h1 className="text-3xl">Internship Experience</h1>

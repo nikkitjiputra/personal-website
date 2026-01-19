@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <div className="flex flex-col relative h-screen">
+    <div className="flex flex-col z-20 relative h-screen ">
       <NavBar className="self-start" />
-      <div className="absolute inset-10 flex flex-col grow md:flex md:flex-row md:grow md:h-screen">
+      <div className="absolute inset-10 flex flex-col grow md:flex md:flex-row md:grow ">
 
-        <div className="mr-10 p-5 mt-20 w-full md:mx-50 md:mt-40 md:w-1/2 md:p-10">
+        <div className="mr-10 p-5 mt-20 w-full md:mx-50 md:mt-40 md:w-1/2 md:pb-0 md:px-10 md:pt-10">
           <h1 className="mb-5 md:text-2xl font-serif md:mb-10">Hi, my name is</h1>
           <h1 className="text-5xl mb-5 font-serif md:text-6xl text-amber-900">Nikki Tjiputra</h1>
           <h1 className="text-xl mb-5 font-serif md:text-3xl">University of Maryland | Computer Science</h1>
@@ -18,9 +18,9 @@ export default function Home() {
             building impactful software that balances innovation with reliability and 
             sustainability.</h1>
         </div>
-        <div className="flex justify-end grow items-end h-full">
+        <div className="flex hidden justify-end grow items-end h-full">
           
-          <Image loading="eager" className="hidden md:block w-full h-auto md:w-full md:h-auto" src="/flowers.png" width="500" height="500" alt="Flowers"></Image>
+          <Image loading="eager" className="hidden md:block w-full h-auto md:w-full md:h-auto md:grow " src="/flowers.png" width="500" height="500" alt="Flowers"></Image>
           
         </div>
       </div>

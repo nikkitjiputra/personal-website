@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="z-20 relative">
         <NavBar />
         <div className="mt-30 p-5 mx-5 md:mt-10 font-serif md:mx-20">
             <h1 className="text-5xl text-amber-900 mb-10">Contact</h1>
