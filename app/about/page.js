@@ -18,7 +18,7 @@ const About = () => {
                     my journey through the tech world, I hope to use my privilege and role as an engineer and developer to create 
                     meaningful software that impacts real people. 
                 </p>
-                <p className="text-lg md:text-xl md:w-2/3">Outside of tech, some of my hobbies include all sports, hiking, and trying new restaurants.</p>
+                <p className="text-lg md:text-xl md:w-2/3">Outside of tech, some of my hobbies include playing sports, hiking, playing the guitar, and trying new restaurants.</p>
             </div>
         </div>
         

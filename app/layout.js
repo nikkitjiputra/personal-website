@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body
         className={`font-sans antialiased`}
       >
-        <FallingLeaves className="hidden md:block" count={35} />
+        <FallingLeaves className="hidden md:block" count={20} />
         <FallingLeaves className="block md:hidden" count={0} />
         {children}
       </body>

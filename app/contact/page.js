@@ -9,11 +9,11 @@ const Contact = () => {
         <NavBar />
         <div className="mt-30 p-5 mx-5 md:mt-20 font-serif md:mx-20">
             <h1 className="text-5xl text-amber-900 mb-10">Contact</h1>
-            <h1 className="text-2xl md:text-3xl mb-10">You can reach me by email or LinkedIn!</h1>
-            <div className="flex flex-col w-full md:w-100">
+            <h1 className="text-2xl md:text-3xl mb-10">You can reach me by email or LinkedIn.</h1>
+            <div className="flex flex-col w-full">
               <div className="flex items-center">
                 <Image className="mx-1 mb-5 md:m-5" src="/email.png" width={50} height={50} alt="Email Symbol"></Image>          
-                <a href="mailto:nikkitjiputra5@gmail.com" className="underline z-20 hover:text-amber-900 mx-1 mr-5 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5@gmail.com</a>
+                <h1 className="mx-1 mr-5 mb-5 md:m-5 text-lg md:text-xl">nikkitjiputra5 [at] gmail [dot] com</h1>
               </div>
               <div className="flex items-center">
                 <Image className="mx-1 md:m-5" src="/linkedin.png" width={50} height={50} alt="Email Symbol"></Image>

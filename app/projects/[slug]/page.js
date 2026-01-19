@@ -3,6 +3,7 @@ import React from 'react'
 import NavBar from '@/app/components/NavBar';
 import clientPromise from '@/lib/mongodb';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 // const getProject = async (slug) => {
@@ -33,7 +34,13 @@ const ProjectPage = async ({params}) => {
     <div>
         <NavBar />
         <div className="mx-5 mt-30 z-20 relative font-serif p-5 md:mt-20 md:mx-20">
-            <h1 className="mb-10 text-amber-900 text-5xl">Projects</h1>
+            <h1 className="mb-5 text-amber-900 text-5xl">Projects</h1>
+
+            <Link className="flex items-center mb-10" href="/projects">
+                <Image src="/back.png" width="30" height="30" alt="Back"></Image>
+                <h1 className="text-lg">Back to Projects</h1>
+            </Link>
+
             {!project.link && <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>}
             
             {project.link && 
