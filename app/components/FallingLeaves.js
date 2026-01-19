@@ -43,7 +43,7 @@ const FallingLeaves = ({count = 30}) => {
       {leaves.map((leaf) => (
         <div
           key={leaf.id}
-          className="absolute top-[-15%] animate-leaf-fall"
+          className="absolute top-5 animate-leaf-fall"
           style={{
             left: `${leaf.left}%`,
             width: leaf.size,
