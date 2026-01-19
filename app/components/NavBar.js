@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <div className="">
       <nav className={`md:hidden fixed top-0 left-0 right-0 ${isOpen ? "z-50" : "z-30"}`}>
-        <div className={`flex flex-col h-screen`}>
+        <div className={`flex flex-col ${isOpen ? "h-screen" : "h-auto"}`}>
           <div className="mx-auto w-full flex justify-between items-center p-5 bg-[oklch(98%_0.016_73.684)]">
             <Link href="/" className="text-amber-900 font-serif self-start">
               <Image src="/flowericon.png" width="50" height="50" alt="Home"></Image>

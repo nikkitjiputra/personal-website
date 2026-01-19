@@ -2,6 +2,7 @@
 import React from 'react'
 import NavBar from '@/app/components/NavBar';
 import clientPromise from '@/lib/mongodb';
+import Link from 'next/link';
 
 
 // const getProject = async (slug) => {
@@ -33,16 +34,24 @@ const ProjectPage = async ({params}) => {
         <NavBar />
         <div className="mx-5 mt-30 z-20 relative font-serif p-5 md:mt-20 md:mx-20">
             <h1 className="mb-10 text-amber-900 text-5xl">Projects</h1>
-            <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>
+            {!project.link && <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>}
+            
+            {project.link && 
+            <div className="mb-5 md:mb-10">
+                <Link className="hover:text-shadow-lg hover:text-gray-700 text-3xl" href={project.link}>{project.name}</Link>
+            </div>}
+
             <div className="mx-5 md:mx-10">
                 
                 <h1 className="mb-10 text-lg">{project.summary}</h1>
+
                 <h1 className="mb-5 text-2xl">Tech Stack:</h1>
-                <ul className="text-lg list-disc list-inside">
+                <ul className="text-lg mb-5 list-disc list-inside">
                     {project.tech.map(tool => (
                         <li key={tool}>{tool}</li>
                     ))}
                 </ul>
+                
             </div>
             
         </div>
