@@ -31,7 +31,7 @@ const ProjectPage = async ({params}) => {
   return (
     <div>
         <NavBar />
-        <div className="mx-5 mt-30 font-serif p-5 md:mt-10 md:mx-20">
+        <div className="mx-5 mt-30 z-20 relative font-serif p-5 md:mt-20 md:mx-20">
             <h1 className="mb-10 text-amber-900 text-5xl">Projects</h1>
             <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>
             <div className="mx-5 md:mx-10">
