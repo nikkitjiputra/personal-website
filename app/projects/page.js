@@ -17,7 +17,10 @@ const Projects = () => {
     useEffect(() => {
         fetch("/api/projects")
             .then(res => res.json())
-            .then(data => setProjects(data.collections));
+            .then(data => data.collections.sort((a, b) => {
+                return new Date(b.createdAt) - new Date(a.createdAt);
+            }))
+            .then(sortedData => setProjects(sortedData));
         }, []);
     //console.log(projects, "a collection");
   return (
