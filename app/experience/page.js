@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <div className="">
         <NavBar className="self-start" />
-        <div className="relative z-20 mt-30 p-5 mx-5 font-serif  md:mt-10 md:mx-20">
+        <div className="relative z-20 mt-30 p-5 mx-5 font-serif md:mt-20 md:mx-20">
             <h1 className="text-5xl text-amber-900 mb-10">Experience</h1>
 
             <h1 className="text-3xl">Internship Experience</h1>
@@ -59,7 +59,7 @@ const Experience = () => {
                 <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Object Oriented Programming I and II</h1>
             </div>
 
-            <h1 className="text-3xl mt-10">Skills</h1>
+            <h1 className="text-3xl mt-10">Languages</h1>
             <div className="grid grid-cols-2 mt-5 md:grid-cols-4 gap-10 md:mt-5 items-end text-center md:mx-40 text-xl mb-20">
                 <div className="flex flex-col items-center">
                     <Image className="" src="/java.svg" alt="Java Logo" width={50} height={50}></Image>
@@ -86,12 +86,39 @@ const Experience = () => {
                     <h1 className="mt-5">C</h1>
                 </div>
                 <div className="flex flex-col items-center">
-                    <Image src="/react.png" alt="HTML Logo" width={50} height={50}></Image>
-                    <h1 className="mt-5">React</h1>
+                    <Image src="/css.png" alt="CSS Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">CSS</h1>
                 </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/github.svg" alt="Github Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">Git/Github</h1>
+                </div>
+            </div>
+            <h1 className="text-3xl mt-10">Libraries/Frameworks</h1>
+            <div className="grid grid-cols-2 mt-5 md:grid-cols-4 gap-10 md:mt-5 items-end text-center md:mx-40 text-xl mb-20">
                 <div className="flex flex-col items-center">
                     <Image src="/tailwind.png" alt="HTML Logo" width={50} height={50}></Image>
                     <h1 className="mt-5">Tailwind CSS</h1>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/react.png" alt="React Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">React</h1>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/next.svg" alt="Next.js Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">Next</h1>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/fastapi.svg" alt="FastAPI Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">FastAPI</h1>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/numpy.png" alt="Numpy Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">Numpy</h1>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/pandas.png" alt="Pandas Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">Pandas</h1>
                 </div>
             </div>
 

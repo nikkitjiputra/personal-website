@@ -20,12 +20,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   //const [open, setOpen] = useState(false);
+
   return (
     <html lang="en">
       <body
         className={`font-sans antialiased`}
       >
-        <FallingLeaves count={35} />
+        <FallingLeaves className="hidden md:block" count={35} />
+        <FallingLeaves className="block md:hidden" count={0} />
         {children}
       </body>
     </html>
