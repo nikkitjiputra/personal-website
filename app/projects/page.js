@@ -26,7 +26,6 @@ const Projects = () => {
   return (
     
     <div className="">
-        <NavBar className="self-start" />
         <div className="z-20 relative mt-30 p-5 mx-5 md:mt-20 md:mx-20">
             <h1 className="text-5xl text-amber-900 font-serif mb-10">Projects</h1>
             {projects.length == 0 && <h1 className="text-3xl text-amber-900 font-serif text-center">Loading...</h1>}

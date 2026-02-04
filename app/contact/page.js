@@ -6,7 +6,6 @@ import Link from 'next/link';
 const Contact = () => {
   return (
     <div className="z-20 relative">
-        <NavBar />
         <div className="mt-30 p-5 mx-5 md:mt-20 font-serif md:mx-20">
             <h1 className="text-5xl text-amber-900 mb-10">Contact</h1>
             <h1 className="text-2xl md:text-3xl mb-10">You can reach me by email or LinkedIn.</h1>

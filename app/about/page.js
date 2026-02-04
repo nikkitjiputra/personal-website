@@ -5,7 +5,7 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div className="flex z-20 flex-col h-screen">
-        <NavBar className="self-start" />
+        
         <div className="z-20 flex grow">
             <div className="flex flex-col mt-30 font-serif mx-5 p-5 md:mt-20 md:mx-20">
                 <h1 className="text-5xl mb-10 text-amber-900 md:text-5xl md:mb-10">About</h1>

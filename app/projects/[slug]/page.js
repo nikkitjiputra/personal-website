@@ -36,7 +36,7 @@ const ProjectPage = async ({params}) => {
         <div className="mx-5 mt-30 z-20 relative font-serif p-5 md:mt-20 md:mx-20">
             <h1 className="mb-5 text-amber-900 text-5xl">Projects</h1>
 
-            <Link className="flex items-center mb-10" href="/projects">
+            <Link className="hover:text-shadow-lg flex items-center mb-10" href="/projects">
                 <Image src="/back.png" width="30" height="30" alt="Back"></Image>
                 <h1 className="text-lg">Back to Projects</h1>
             </Link>

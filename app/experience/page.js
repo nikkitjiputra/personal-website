@@ -5,7 +5,6 @@ import Image from 'next/image';
 const Experience = () => {
   return (
     <div className="">
-        <NavBar className="self-start" />
         <div className="relative z-20 mt-30 p-5 mx-5 font-serif md:mt-20 md:mx-20">
             <h1 className="text-5xl text-amber-900 mb-10">Experience</h1>
 
