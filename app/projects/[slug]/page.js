@@ -41,15 +41,17 @@ const ProjectPage = async ({params}) => {
                 <h1 className="text-lg">Back to Projects</h1>
             </Link>
 
-            {!project.link && <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>}
+            <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>
             
-            {project.link && 
-            <div className="mb-5 md:mb-10">
-                <Link className="hover:text-shadow-lg hover:text-gray-700 text-3xl" href={project.link}>{project.name}</Link>
-            </div>}
 
             <div className="mx-5 md:mx-10">
-                
+                {!project.link && <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>}
+            
+                {project.link && 
+                <div className="mb-5 text-xl md:mb-10">
+                    Link: <Link className="hover:text-shadow-lg underline hover:text-gray-700 text-xl" href={project.link}>{project.link}</Link>
+                </div>}
+
                 <h1 className="mb-10 text-lg">{project.summary}</h1>
 
                 <h1 className="mb-5 text-2xl">Tech Stack:</h1>
