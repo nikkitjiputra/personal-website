@@ -45,7 +45,6 @@ const ProjectPage = async ({params}) => {
             
 
             <div className="mx-5 md:mx-10">
-                {!project.link && <h1 className="mb-5 md:mb-10 text-3xl">{project.name}</h1>}
             
                 {project.link && 
                 <div className="mb-5 text-xl md:mb-10">
