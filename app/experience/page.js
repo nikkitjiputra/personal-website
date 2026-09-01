@@ -10,6 +10,16 @@ const Experience = () => {
 
             <h1 className="text-3xl">Internship Experience</h1>
             <div className="ml-5 md:ml-10">
+
+            <h1 className="text-2xl  mt-5">Software Engineer Intern</h1>
+            <h5 className="text-lg ">BTI360 | May 2026 - August 2026</h5>
+            <ul className=" space-y-1 list-disc list-inside">
+                <li>Collaborated on a team of interns developing a generic service evaluation tool to be used on AI-based services.</li>
+                <li>Created a mock big data pipeline to test our evaluator tool consisting of a junk detection service and a fact checking service.</li>
+                <li>Got exposure to AI coding assistants and learned best practices for prompt engineering, such as using markdown, and creating specs.</li>
+                <li>Earned the AWS Certified Cloud Practitioner Certification.</li>
+            </ul>
+
             <h1 className="text-2xl mt-5">TechStart Intern</h1>
             <h5 className="text-lg ">Liberty Mutual Insurance Group | June 2025 - August 2025</h5>
             <ul className=" space-y-1 list-disc list-inside">
@@ -56,6 +66,9 @@ const Experience = () => {
                 <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Web Application Development with JavaScript</h1>
                 <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Introduction to Go</h1>
                 <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Object Oriented Programming I and II</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Database Design</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Programming Language Technologies and Paradigms</h1>
+                <h1 className="mt-2 md:mt-5 mx-5 text-center grow-1">Competitive Programming</h1>
             </div>
 
             <h1 className="text-3xl mt-10">Languages</h1>
@@ -89,6 +102,10 @@ const Experience = () => {
                     <h1 className="mt-5">CSS</h1>
                 </div>
                 <div className="flex flex-col items-center">
+                    <Image src="/terraform.webp" alt="Terraform Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">Terraform</h1>
+                </div>
+                <div className="flex flex-col items-center">
                     <Image src="/github.svg" alt="Github Logo" width={50} height={50}></Image>
                     <h1 className="mt-5">Git/Github</h1>
                 </div>
@@ -106,6 +123,10 @@ const Experience = () => {
                 <div className="flex flex-col items-center">
                     <Image src="/next.svg" alt="Next.js Logo" width={50} height={50}></Image>
                     <h1 className="mt-5">Next</h1>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/spring.png" alt="Spring Logo" width={50} height={50}></Image>
+                    <h1 className="mt-5">Spring</h1>
                 </div>
                 <div className="flex flex-col items-center">
                     <Image src="/fastapi.svg" alt="FastAPI Logo" width={50} height={50}></Image>
